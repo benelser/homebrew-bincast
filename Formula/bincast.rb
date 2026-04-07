@@ -3,7 +3,7 @@
 class Bincast < Formula
   desc "Ship your Rust binary to every package manager with one command"
   homepage "https://github.com/benelser/bincast"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
