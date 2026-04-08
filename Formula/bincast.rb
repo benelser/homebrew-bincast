@@ -3,28 +3,28 @@
 class Bincast < Formula
   desc "Ship your Rust binary to every package manager with one command"
   homepage "https://github.com/benelser/bincast"
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/benelser/bincast/releases/download/v#{version}/bincast-aarch64-apple-darwin.tar.gz"
-      sha256 "779ead18bc3ddfbcfde297b2693650af9ab774e174a33677e395631297ec3032"
+      sha256 "6c129b7bbed2e64c89a1338206f89bc2ca649e0a2e18f3c7799f5f32faacfaf7"
     end
     if Hardware::CPU.intel?
       url "https://github.com/benelser/bincast/releases/download/v#{version}/bincast-x86_64-apple-darwin.tar.gz"
-      sha256 "72c81e5a89dfe18155e143fe62d9f259d1407ec6433be5b181794d70badb30df"
+      sha256 "410b4c83a2c6316c0c475a427f8481168195fefbf64a8df472e567a65877a9d6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/benelser/bincast/releases/download/v#{version}/bincast-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "25c675157131319c717013776c91fff0489a00dcaf96bbd7563a74cf42401814"
+      sha256 "c4ba11d53f20bc53d5f45000b5079d30a7f5be793d5ce98724918a2ede362463"
     end
     if Hardware::CPU.intel?
       url "https://github.com/benelser/bincast/releases/download/v#{version}/bincast-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7e98d4e75d567ad27fb9d8b22868b198795cf76a0217a84bd51832065a00f725"
+      sha256 "950aa5af82e813837f9001ec75c676568d9087a7077a071a48d07c2b0703cd8c"
     end
   end
 
